@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BackStore-List of Orders-P11</title>
+	<meta name="Order Editing" content="width=device-width, initial-scale=1.0" charset="UFT-8">
+	<link rel="Stylesheet" href="css/stylesheetP7P9P11.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/c7cf1afa55.js" crossorigin="anonymous"></script>
+	<!-- Favicon -->
+  	<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+	<div class="header">
+		<img src="images\Groceryfavicon.png" height= 35px width=auto alt="Logo image">BACK STORE - FreshFoodToday</a>
+	</div>
+	
+	<header>
+<!--Navigation Bar-->
+		<nav class="site-nav">
+			<ul class="group">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="p11.html">Orders</a></li>
+				<li><a href="p7.html">Products</a></li>
+				<li><a href="p9.html">Users</a></li>
+			</ul>
+		</nav>
+	</header>
+	<br/><br/>
+
+<!--List of Orders-->
+	<div class="row">
+		<h2>List of Orders</h2>
+
+<!--Table-->
+		<div class="col">
+			<table id="List">
+				<!--Table head-->
+				<thead>
+					<tr>
+						<th>Order#</th>
+						<th>Price</th>
+						<th>Date created</th>
+						<th>Status</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+
+<!--Table body-->
+				<tbody>
+					<!--Order 1-->
+					<tr>
+						<td><label>1111</label></td>
+						<td>40.00$</td>
+						<td>20/02/2022 18:15</td>
+						<td>Processed</td>
+						<td>
+							<div class="btn">
+								<a href="p12.html"><button class="edit">Edit</button></a>
+								<button class="delete"> Delete</button>
+							</div>
+						</td>
+					</tr>
+
+					<!--Order 2-->
+					<tr>
+						<td><label>2222</label></td>
+						<td>100.00$</td>
+						<td>18/02/2022 19:20</td>
+						<td>Out for delivery</td>
+						<td>
+							<div class="btn">
+								<a href="p12.html"><button class="edit">Edit</button></a>
+								<button class="delete"> Delete</button>
+							</div>
+						</td>
+					</tr>
+
+					<!--Order 3-->
+					<tr>
+						<td><label>3333</label></td>
+						<td>60.00$</td>
+						<td>16/02/2022 15:15</td>
+						<td>Complete</td>
+						<td>
+							<div class="btn">
+								<a href="p12.html"><button class="edit">Edit</button></a>
+								<button class="delete"> Delete</button>
+							</div>
+						</td>
+					</tr>
+			</tbody>
+		</table>
+		<br/>
+
+<!--Add Order button-->
+			<div class="btn">
+				<a href="p12.html"><button class="add">Add</button></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

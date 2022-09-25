@@ -1,0 +1,70 @@
+/* External stylesheet for P1 and P2*/
+*{box-sizing:border-box;border-collapse:collapse;
+}
+header{
+text-align:center;
+  background-color: lightgreen;
+  color:black;
+  padding: 15px;
+}
+nav{
+  background-color:cadetblue;
+  color:black;
+  padding: 15px;
+}
+footer{
+  border: 1px light grey;
+  padding: 15px;
+}
+/*Mobiles*/
+[class*="col-"] {
+  width: 100%;
+}
+/*Tablets*/
+@media only screen and (min-width: 600px) {
+[class*="col-"] {
+  width: 50%;
+}
+}
+/*Desktops*/
+@media only screen and (min-width: 900px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+div.main{padding-right:10%;padding-left:10%;}
+h1.aislename
+{
+text-align:center;
+font-weight:bold;
+font-family:'Times New Roman' Palatino;
+font-size:3.0em;
+}
+.item{
+border-color:black;
+border-collapse:collapse;
+text-align:center;
+border-style:solid;
+border-width:thin;
+text-decoration:none;
+font-family:Arial;
+color:green;}

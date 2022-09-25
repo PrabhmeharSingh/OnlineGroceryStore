@@ -1,0 +1,192 @@
+html{
+  font-family: "Ubuntu", "Montserrat", "Montserrat-Light";
+  color:#2C3333;
+}
+
+.header{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: white;
+  color:#357C3C;
+  padding: 15px;
+}
+
+.site-nav{
+  margin-top: 20px;
+}
+
+.site-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #93af74;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.site-nav li {
+  float: left;
+}
+
+.site-nav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  background-color: ##93af74;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  font-family: "Ubuntu";
+  padding: 15px;
+  border: 1px;
+}
+@media only screen and (max-width: 600px) {
+/* For Extra Small devices: */
+[class*="col-"] {
+  font-family: "Ubuntu";
+  width: 100%;
+}
+}
+@media only screen and (min-width: 600px) {
+  /* For Small devices: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For Medium devices: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+@media only screen and (min-width: 992px) {
+  /* For Large devices: */
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+}
+@media only screen and (min-width: 1200px) {
+  /* For Extra Large devices: */
+  .col-x-1 {width: 8.33%;}
+  .col-x-2 {width: 16.66%;}
+  .col-x-3 {width: 25%;}
+  .col-x-4 {width: 33.33%;}
+  .col-x-5 {width: 41.66%;}
+  .col-x-6 {width: 50%;}
+  .col-x-7 {width: 58.33%;}
+  .col-x-8 {width: 66.66%;}
+  .col-x-9 {width: 75%;}
+  .col-x-10 {width: 83.33%;}
+  .col-x-11 {width: 91.66%;}
+  .col-x-12 {width: 100%;}
+}
+.layout{
+  display: flex;
+  flex-direction: column;
+}
+
+input,select{
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col{
+    flex: 1;
+  padding: 0 16px;
+}
+button{
+  width: 100px;
+  border-radius: 5px;
+  height: 30px;
+  background-color: white;
+}
+
+.Save {
+    background-color:#93af74;
+    color: white;
+    cursor: pointer;
+	text-align:center;
+}
+.Save:hover {
+    background-color: #bed89d;
+}
+
+.Cancel {
+	background-color:#93af74;
+	color: white;
+	cursor: pointer;
+	text-align:center;
+}
+
+.Cancel:hover{
+	background-color: #bed89d;
+}
+
+#Order{
+  font-family:"Montserrat-Light", "Ubuntu";
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#Order td, #Order th {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: center;
+}
+
+#Order tr:nth-child(even){background-color: #eaf0e4;}
+
+#Order tr:hover {background-color: #ccd6bf;}
+
+#Order th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #93af74;
+  color: white;
+}

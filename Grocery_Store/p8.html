@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BackStore- Editing Products - P8</title>
+    <meta name="Editing Products" content="width=device-width, initial-scale=1.0" charset="UFT-8">
+    <link rel="Stylesheet" href="css/stylesheetP6P8P10.css">
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c7cf1afa55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="images\Groceryfavicon.png" height= 35px width=auto alt="Logo image">BACK STORE - FreshFoodToday</a>
+    </div>
+
+    	<!--Navigation Bar-->
+	 <nav class="site-nav">
+		<ul class="group">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="p11.html">Orders</a></li>
+		<li><a href="p7.html">Products</a></li>
+		<li><a href="p9.html">Users</a></li>
+	 </ul>
+	      </nav>
+	</header>
+	<br/><br/>
+  
+<h1>Edit Product</h1>
+
+    <div class="row">
+        <div class="col-12">
+            <table id="List">
+                <tr>
+                    <td><label for="ProductName"> New Product Name	</label>&nbsp;&nbsp;
+						<input type="text" id="ProductName" name="ProductName" size="50">
+					</td>
+                </tr>
+                <tr>
+                    <td><label>New Product Image </label>&nbsp;&nbsp;
+						<input type="file" name="file" id="newfile" class="custom-file-input"/>
+						<label for="newfile">Choose a file</label>
+					</td>
+                </tr>
+                <tr>
+                    <td><label for="ProductPrice">New Product Price</label>&nbsp; &nbsp;
+						<input type="text" id="ProductPrice" name="Product Prcie" size="10">
+					</td>
+                </tr>
+				<tr>
+                    <td><label for="ProductQuantity">New Product Stock Quantity</label>&nbsp; &nbsp;
+						<input type="text" id="ProductQuantity" name="Product Quantity" size="10">
+					</td>
+                </tr>
+            </table>
+			<br/>
+		</div>
+    <button class="save"> Save</button>
+    <button class="cancel">Canel</button>
+    </div>
+</body>
+</html>

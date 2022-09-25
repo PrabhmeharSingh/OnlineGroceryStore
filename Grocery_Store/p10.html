@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <title>ProfilePage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/stylesheetP6P8P10.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+
+	    <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+  </head>
+
+  <body>
+    <header>
+      <img src="images\Groceryfavicon.png" width=50px alt="Logo image">BACK STORE - FreshFoodToday</a>
+
+<!--Navigation Bar-->
+      <nav class="site-nav">
+          <ul class="group">
+        		<li><a href="index.html">Home</a></li>
+        		<li><a href="p11.html">Orders</a></li>
+        		<li><a href="p7.html">Products</a></li>
+        		<li><a href="p9.html">Users</a></li>
+      	</ul>
+      </nav>
+</header>
+<br/><br/>
+
+    <h1>User Profile</h1>
+
+    <!--Edit User Profile-->
+    <form>
+      <div class="layout">
+        <!--Contact information-->
+        <div class="contact-info">
+          <div class="section"><h2>Contact Information</h2></div>
+
+            <div class="content">
+              <div class="row">
+
+              <div class="col">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName">
+              </div>
+
+              <div class="col">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName">
+              </div>
+
+              </div>
+
+              <div class="row">
+
+                <div class="col">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email">
+                </div>
+
+                <div class="col">
+                <label for="telephone">Phone Number</label>
+                <input type="tel" id="telephone" name="telephone">
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--Address information-->
+        <div class="address-info">
+          <div class="section"><h2>Address Information</h2></div>
+
+          <div class="content">
+            <div class= "row">
+              <div class="col">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="address">
+
+                <label for="unit">Apartment/Suite#</label>
+                <input type="text" id="unit" name="unit">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+
+                <div class="row">
+                  <div class="col">
+                    <label for="province">Province</label>
+                    <select name="province" id="province">
+                      <option value="none">Select a Province</option>
+                      <option value="ab">AB</option>
+                      <option value="bc">BC</option>
+                      <option value="mb">MB</option>
+                      <option value="nb">NB</option>
+                      <option value="nl">NL</option>
+                      <option value="ns">NS</option>
+                      <option value="nt">NT</option>
+                      <option value="nu">NU</option>
+                      <option value="on">ON</option>
+                      <option value="pe">PE</option>
+                      <option value="qc">QC</option>
+                      <option value="sk">SK</option>
+                      <option value="yt">YT</option>
+                    </select>
+                  </div>
+
+                  <div class="col">
+                    <label for="postalCode">Postal Code</label>
+                    <input type="text" id="postalCode" name="postalCode">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--Save Button-->
+        <div class="btn">
+              <button type="submit">Save</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

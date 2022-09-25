@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- shopping cart page -->
+<html>
+<head>
+	<link href="cartstyle.css" type="text/css" rel="stylesheet"/>
+	<link href="../css/nav.css" type="text/css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<!-- Favicon -->
+	<link rel="icon" href="../images/favicon.ico">
+	<title>
+	Your Cart
+	</title>
+</head>
+<body>
+<script type = "text/javascript" src = "javascript\p4.js"></script>
+	<header class="header">
+		<nav class="site-nav" style="margin:0px; ">
+			<ul class="group"  style="background-color: #fff;">
+				<li ><a class="navbar-brand" href="../index.html" style="color: #357C3C;background-color: #fff;"><img src="../images/Groceryfavicon.png" width=50px alt="Logo image">FreshFoodToday</a></li>
+				<li style="float: right;"><a class="nav-link sign-in" style="color: #357C3C;background-color: #fff; margin: 20px 0px;" href="../p5.html"><i class="fa-solid fa-arrow-right-to-bracket"></i><Strong> Sign in</strong></a></li>
+				<li style="float: right;"><a href="../p6.html" style="color:#357C3C; background-color: #fff; margin: 20px 0px;">Get started</a></li>
+				<li style="float: right"><a href="../index.html" style="color:#357C3C ;background-color: #fff; margin: 20px 0px;">Contact</a> </li>
+			</ul>
+		</nav>
+	</header>
+
+    <section id="title" style="background-color: #93af74; padding: 0px;">
+
+    <!--Navigation Bar-->
+        <nav class="site-nav" style="margin-top: 0px;" >
+            <ul class="group" >
+				<li><li><a href="../index.html">Home</a> </li>
+                <li><li><a href="../p2.html">Aisles</a> </li>
+                <li style="float: right;"><input type="text" placeholder="Search.."></li>
+            </ul>
+        </nav>
+	</section>
+
+	<div class="main">	
+		<form>
+			
+			<div class="itemsincart">
+				
+				<h2 class="divname">Items In Cart</h2>
+				<hr/>
+				
+				<div class="row ">
+					<span class="products colhead">Products</span>
+					<span class="price colhead">Price</span>
+					<span class="quantity colhead">Qty.</span>
+					<span class="total colhead">Total</span>
+					<span class="delete colhead"> <button>Clear</button> </span>
+				</div>
+			
+				<div class="row">
+					
+					<span class="products">
+						<img class="productimg" src="../Aisles/Fruits/apple.jpg">
+						<span class="productname">Apple</span>
+					</span>
+					
+					<span class="price">$1.24</span>
+					
+					<span class="quantity">
+						<button class="minus" onclick = "minusApple()">-</button>
+						<input type = "text" id = "Apple" size = 1 value = 1>
+						<button class="plus" onclick = "addApple()">+</button>
+					</span>
+					
+					<span class = "total">
+						<input type = "text" id = "totalApple" size = 1 value = 0>
+					</span>
+					
+					<span class="delete"> <button>delete</button> </span>
+				
+				</div>
+			
+				<div class="row ">
+					
+					<span class="products">
+						<img class="productimg" src="../Aisles/DairyandEggs/1milk.jpg">
+						<span class="productname">1% Milk</span>
+					</span>
+					
+					<span class="price">$5.39</span>
+					
+					<span class="quantity">
+						<button class="minus" onclick = "minusMilk()">-</button>
+						<input type = "text" id = "Milk" size = 1 value = 1>
+						<button class="plus" onclick = "addMilk()">+</button>
+					</span>
+					
+					<span class = "total">
+						<input type = "text" id = "totalMilk" size = 1 value = 0>
+					</span>
+					
+					<span class="delete">
+						<button>delete</button>			
+					</span>
+				
+				</div>
+			
+				<div class="row ">
+					
+					<span class="products">
+						<img class="productimg" src="../Aisles/Fruits/banana.jpg">
+						<span class="productname">Banana</span>				
+					</span>
+					
+					<span class="price">$1.52</span>
+					
+					<span class="quantity">
+						<button class="minus" onclick = "minusBanana()">-</button>
+						<input type = "text" id = "Banana" size = 1 value = 1>
+						<button class="plus" onclick = "addBanana()">+</button>
+					</span>
+					
+					<span class = "total">
+						<input type = "text" id = "totalBanana" size = 1 value = 0>
+					</span>
+					
+					<span class="delete">
+						<button>delete</button>
+					</span>
+				
+				</div>
+			
+			</div>
+
+			<div class="ordersummary">
+				
+				<h2 class="divname">Order Summary</h2>
+				<hr/>
+				
+				<div class="row">
+					
+					<span class="field">Number of Items</span>
+					
+					<span class="value">
+						$<input type = "text" id = "numOfItems" value = 0 size = 1>
+					</span>
+				
+				</div>
+
+				<div class="row">
+					
+					<span class="field">Subtotal</span>
+					
+					<span class="value">
+						$<input type = "text" id = "Subtotal" size = 1 value = 0>
+					
+					</span>
+				
+				</div>
+
+				<div class="row">
+					
+					<span class="field">GST (5%)</span>
+					
+					<span class="value">
+						$<input type = "text" id = "GST" size = 1 value = 0>
+					
+					</span>
+				
+				</div>
+
+				<div class="row">
+					
+					<span class="field">QST (9.975%)</span>
+					
+					<span class="value">
+						$<input type = "text" id = "QST" size = 1 value = 0>
+					</span>
+				
+				</div>
+
+				
+				<div class="row">
+					
+					<span class="field">Final Total</span>
+					
+					<span class="value">
+						$<input type = "text" id = "FinalTotal" size = 1 value = 0>				
+					</span>
+				
+				</div>
+
+				<div class="row buttonrow">
+					<button class="checkout">Checkout</button>
+				</div>
+
+				<div class="row buttonrow">
+					<button class="continue">Continue Shopping</button>
+				</div>
+			
+			</div>
+		
+		</form>
+	
+	</div>
+	
+	<br/>
+
+	<div class="footer" id="footer">
+		Sign up to myOnlineGrocery.ca to receive offers and much more!
+	
+	</div>
+</body>
+</html>

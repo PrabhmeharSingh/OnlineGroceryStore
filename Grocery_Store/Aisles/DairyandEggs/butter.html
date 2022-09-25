@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ProductDescription.P3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UFT-8">
+    <link rel="Stylesheet" href="../../css/stylesheetP3.css" type="text/css">
+    <link rel="Stylesheet" href="../../css/nav.css" type="text/css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c7cf1afa55.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="../../images/favicon.ico">
+</head>
+<body>
+<script type = "text/javascript" src = "../../javascript/p3.js"></script>
+<div class="header">
+    <img src="../../images\Groceryfavicon.png" height= 35px width=auto alt="Logo image">FreshFoodToday</a>
+    <div class="header-link">
+        <a class="nav-link sign-in" style="color: #357C3C" href="p5.html"><i class="fa-solid fa-arrow-right-to-bracket"></i><Strong> Sign in</strong></a>
+    </div>
+    <div class="header-link">
+        <a class="nav-link" href="p6.html" style="color: #2C3333">Get Started</a>
+    </div>
+    <div class="header-link">
+        <a class="nav-link" href="#footer" style="color: #2C3333">Contact</a>
+    </div>
+</div>
+
+<div class="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="p2.html">Aisles</a></li>
+        <li><a href="ShoppingCart/shoppingcart.html">Shopping cart</a></li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-3 col-s-4 col-l-3 col-x-3">
+        <img src="saltedbutter.jpg" height= 200px width=auto
+        alt="Banana"/>
+    </div>
+    <div class="col-5 col-s-9 col-l-5 col-x-5">
+        <h1>Butter</h1>
+        <h2>Product Description</h2>
+        <span style="font-size: smaller;"><i>$</i></span><input type = "text" id="demo" class ="price" onfocus = "this.blur()" style=font-size:small value = "0.55/100g">
+        <br><br>
+        <p id = "details" style=display:inline>At a starting price of 0.55$ per item, our butter is the finest on the</p>
+        <p id = "3dots" style=display:inline>...</p>
+        <p id = "more" style=display:none> market. A selection of perfectly sized bags are offered as following: 1000g, 2000g or 3000g. Guaranteed freshness! Please note that price per 100g may vary according to butter type.</p><br>
+        <button onclick="moreDetails()" id="button">More Details</button><br><br>
+        <span>Your total: <i>$</i></span>
+        <input type = "text" id = "price" class ="price" onfocus = "this.blur()" value = 0>
+    </div>
+    <div class="col-3 col-s-9 col-l-3 col-x-3">
+        </br>
+        <button id = "minus" class="minus" onclick="minusQuantity()">-</button>
+        <input type = "text" id = "quantity" size = 1 value=0 onfocus = "this.blur()";>
+        <button id = "add" class="add" onclick="addQuantity()">+</button>
+        </br>
+        <button class="btn">Add to Cart</button>
+        </br>
+    </div>
+</div>
+<div class="footer" id="footer">
+    Sign up to myOnlineGrocery.ca to receive offers and much more!<br>
+    Contact us at 514-123-1234 OR FreshFoodToday@email.ca
+</div>
+</body>
+</html>

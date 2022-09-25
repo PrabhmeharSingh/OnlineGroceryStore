@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+    <title>BackStore-ProductList.P7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UFT-8">
+    <link rel="Stylesheet" href="css/stylesheetP7P9P11.css" type="text/css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c7cf1afa55.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+<body>
+    <script type = "text/javascript" src = "javascript/p7.js"></script> </script>
+    <div class="header">
+        <img src="images\Groceryfavicon.png" height= 35px width=auto alt="Logo image">BACK STORE - FreshFoodToday</a>
+    </div>
+    <div class="site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="p11.html">Orders</a></li>
+            <li><a href="p7.html">Products</a></li>
+            <li><a href="p9.html">Users</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        </br>
+            <ul class="aislesBtn">
+                <li><a href="#" style="color:#357C3C"><b>Aisles:&nbsp;</b></a></li>
+                <li><a href="Aisles\DairyandEggs\DairyandEggsaisle.html">Dairy and Eggs |&nbsp;</a></li>
+                <li><a href="Aisles\Fruits\Fruitsaisle.html">Fruits and Vegetables |&nbsp;</a></li>
+                <li><a href="Aisles\HouseholdandCleaning\HouseholdandCleaningaisle.html">Household and Cleaning |&nbsp;</a></li>
+                <li><a href="Aisles\MeatandPoultry\MeatandPoultryaisle.html">Meat and Poultry |&nbsp;</a></li>
+                <li><a href="Aisles\Wines\Winesaisle.html">Wines</a></li>
+            </ul>
+        <h1>Product List</h1>
+        <div class="col-12">
+            <table id="List">
+                <tr align = "center">
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Stock Quantity</th>
+                    <th>Aisle</th>
+                    <th>Object Actions</th>
+                </tr>
+                <tr id = "one">
+                    <td align = "center">Seedless grapes</td>
+                    <td align = "center"><img style="display:block;" src="Aisles/Fruits/seedlessgrapes.jpg" height= 100px width=auto alt="Image of seedless grapes"></div></td>
+                    <td align = "center">$0.55/100g</td>
+                    <td align = "center">50</td>
+                    <td align = "center">1</td>
+                    <td>
+                        <span>
+                            <a href="p8.html" class="edits">Edit Product</a><br><br>
+                            <button id = "delete" class="delete" value="1" onclick="deleted(1)">Delete Product</button>
+                        </span>
+                    </td>
+                </tr>
+                <tr  id = "two">
+                    <td align = "center">Orange juice</td>
+                    <td align = "center"><img style="display:block;" src="https://th.bing.com/th/id/OIP.WFvVB_pzhrmuv3zbz2GDoAHaHa?pid=ImgDet&rs=1" height= 100px width=auto alt="Image of orange juice"></td>
+                    <td align = "center">$5.50/500ml</td>
+                    <td align = "center">50</td>
+                    <td align = "center">4</td>
+                    <td>
+                        <span>
+                            <a href="p8.html" class="edits">Edit Product</a><br><br>
+                            <button id = "delete" class="delete" value="2" onclick="deleted(2)">Delete Product</button>
+                        </span>
+                    </td>
+                </tr>
+                <tr id = "three">
+                    <td align = "center">Mozzarella cheese</td>
+                    <td align = "center"><img style="display:block;" src="https://th.bing.com/th/id/OIP.0MUssJSCoWgZRb3314Vl5gHaHa?pid=ImgDet&rs=1" height= 100px width=auto alt="Image of mozzarella"></td>
+                    <td align = "center">$3.99/100g</td>
+                    <td align = "center">50</td>
+                    <td align = "center">3</td>
+                    <td>
+                        <span>
+                            <a href="p8.html" class="edits">Edit Product</a><br><br>
+                            <button id = "delete" class="delete" value="3" onclick="deleted(3)">Delete Product</button>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </br>
+    <a href="p8.html" class="edits">Add Products</a>
+    </div>
+</div>
+</body>
+</html>

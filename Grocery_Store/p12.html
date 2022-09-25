@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<meta charset = "UTF-8" content = "width = device-width, intial-scale = 1.0">
+		<link rel = "stylesheet" href = "css/stylesheetP12.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+
+		<title>Order Edit Page</title>
+		<!-- Favicon -->
+  		<link rel="icon" href="images/favicon.ico">
+	</head>
+
+	<body>
+
+		<div class="header">
+			<img src="images\Groceryfavicon.png" height= 35px width=auto alt="Logo image">BACK STORE - FreshFoodToday</a>
+		</div>
+
+		<header>
+			<nav class="site-nav">
+				<ul class="group">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="p11.html">Orders</a></li>
+		<li><a href="p7.html">Products</a></li>
+		<li><a href="p9.html">Users</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<br/>
+		<h1 style = "color: #FF6464;">Edit existing order</h1>
+		<br/>
+
+		<div class = "layout">
+		<div class = "row">
+		<div class = "col">
+			<table id = "Order">
+
+				<tr>
+					<th>Product</th>
+					<th>Price/unit</th>
+					<th>Total</th>
+					<th>Units</th>
+				</tr>
+
+				<tr>
+					<td>Red Grapes</td>
+					<td>$10</td>
+					<td>$20</td>
+					<td>
+					<button class="change">-</button>
+					<span id="quantity">00001</span>
+					<button class="change">+</button>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Green Grapes</td>
+					<td>$20</td>
+					<td>$60</td>
+					<td>
+					<button class="change">-</button>
+					<span id="quantity">00002</span>
+					<button class="change">+</button>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Purple Grapes</td>
+					<td>$30</td>
+					<td>$90</td>
+					<td>
+					<button class="change">-</button>
+					<span id="quantity">00003</span>
+					<button class="change">+</button>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		</div>
+		</div>
+		<br/></br>
+			<button class = "Save"> <a href="p11.html" >Save</a></button>
+			<button class = "Cancel" style="float:right"> <a href="p11.html" >Cancel</a> </button>
+	</body>
+</html>

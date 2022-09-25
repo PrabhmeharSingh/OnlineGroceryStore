@@ -1,0 +1,175 @@
+*{box-sizing:border-box;
+}
+.footer{
+  
+  clear:both;
+  font-weight:lighter;
+  background-color:#93af74;
+  color:white;
+  padding: 25px;
+}
+/*small devices*/
+@media only screen and (max-width: 415px)
+{
+.quantity
+{
+width:20%;
+}
+.price, .delete{
+	width:8%;
+}
+.total
+{
+width:12%;
+}
+.products
+{
+width:40%;
+}
+.ordersummary,.itemsincart{width:96%;}
+.products,.price,.quantity,.delete,.productname
+{
+text-align:center;
+display:table-cell;
+padding:0px;
+height:auto;
+}
+.productimg{display:none;}
+}
+@media only screen and (min-width: 415px)
+{
+.ordersummary,.itemsincart{width:96%;}
+.quantity
+{
+width:16%;
+}
+.price, .delete{
+width: 8%;
+}
+.total
+{
+width:12%;
+}
+.products
+{
+width:45%;
+}
+}
+/*mobiles*/
+@media only screen and (max-width: 600px)
+{
+.ordersummary,.itemsincart{width:96%;}
+.products,.price,.quantity,.delete,.productname, .total
+{
+text-align:center;
+display:table-cell;
+padding:0px;
+height:auto;
+}
+.productimg{display:none;}
+}
+/*tablets*/
+@media only screen and (min-width: 600px) {
+
+.productname{
+padding-right:5%;
+padding-left:20%;
+}
+.price,.quantity,.delete,.productname,.total
+{
+padding-top:35px;
+padding-bottom:35px;
+}
+.products,.price,.quantity,.delete,.productname,.total
+{
+height:100px;
+}
+}
+/*desktop*/
+@media only screen and (min-width: 915px) {
+.ordersummary{width:36%;}
+.itemsincart{width:56%;}
+}
+.row{width:98%;margin:1%;height:auto;display:table;}
+.row::after 
+{
+  content: "";
+  clear: both;
+display:table;
+  
+}
+div.main{
+display:table;
+width:100%;
+padding:5px;
+}
+.itemsincart,.ordersummary
+{
+float:left;
+border-style:solid;
+border-width:1px;
+padding:5px;
+margin:2%;
+}
+.divname
+{
+color:#93af74;
+font-weight:bold;
+font-family:Arial;
+}
+.products,.price,.quantity,.delete, .total
+{
+float:left;
+text-align:center;
+margin:1%;
+}
+.colhead
+{
+padding:0px;
+font-family:Georgia;
+font-weight:bold;
+height:auto;
+}
+.productname
+{
+float:left;
+}
+.productimg
+{
+padding:2%;
+height:100%;
+float:left;
+}
+.minus,.plus
+{
+margin-left:1%;
+margin-right:1%;
+}
+.itemsincart .row:hover
+{
+background-color:#FFFACD;
+}
+.field
+{
+float:left;
+font-family:Georgia;
+display:table-cell;
+font-weight:bold;
+width:80%;
+}
+.value
+{
+float:left;
+display:table-cell;
+width:20%;
+}
+.buttonrow
+{
+margin:2%;
+text-align:center;
+}
+.checkout,.continue
+{
+color:white;
+background-color:blue;
+}
