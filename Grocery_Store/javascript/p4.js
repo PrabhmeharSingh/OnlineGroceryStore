@@ -1,94 +1,143 @@
-var applePrice = 1.24;
-var milkPrice = 5.39;
-var bananaPrice = 1.52;
-var gstValue = 0.05;
-var qstValue = 0.09975;
-
+const applePrice = 1.24;
+const milkPrice = 5.39;
+const bananaPrice = 1.52;
+var apples = 0;
+var milks = 0;
+var bananas = 0;
+var items = 0;
+var total = 0;
+var subtotalValue = 0;
+var GSTvalue = 0;
+var QSTvalue = 0;
+var totalValue = 0;
+var totalApple = 0;
+var totalMilk = 0;
+var totalBanana = 0;
+function initialize()
+{
+	document.getElementById("apple").innerHTML = apples;
+	document.getElementById("milk").innerHTML = milks;
+	document.getElementById("banana").innerHTML = bananas;
+	document.getElementById("item").innerHTML = items;
+	document.getELementById("subtotal").innerHTML = subtotalValue;
+	document.getElementById("GST").innerHTML = GSTvalue;
+	document.getElementById("QST").innerHTML = QSTvalue;
+	document.getElementById("total").innerHTML = totalValue;
+	document.getElementById("totalApple").innerHTML = totalApple;
+	document.getElementById("totalMilk").innerHTML = totalMilk;
+	document.getElementById("totalBanana").innerHTML = totalBanana;
+}
 function addApple()
 {
-	var quantity = document.getElementByID("Apple").value;
-	document.getElementByID("Apple").value = quantity + 1;
-	document.getElementByID("totalApple").value = document.getElementByID("Apple").value * applePrice;
-	document.getElementByID("Subtotal").value = document.getElementByID("totalApple").value + document.getElementByID("totalMilk").value + document.getElementByID("totalBanana").value;
-	document.getElementByID("numOfItems").value = document.getElementByID("Apple").value + document.getElementByID("Milk").value + document.getElementByID("Banana").value;
-	document.getElementByID("GST").value = document.getElementByID("Subtotal").value * gstValue;
-	document.getElementByID("QST").value = document.getElementByID("Subtotal").value * qstValue;
-	document.getElementByID("FinalTotal").value = document.getElementByID("Subtotal").value + document.getElementByID("GST").value + document.getElementByID("QST").value;
+	apples++;
+	items++;
+	totalApple = Math.round((apples * applePrice)*100)/100;
+	subtotalValue = Math.round((subtotalValue + applePrice) * 100)/100;
+	GSTvalue = Math.round(subtotalValue * 5)/100;
+	QSTvalue = Math.round(subtotalValue * 9.975)/100;
+	totalValue = Math.round((subtotalValue + GSTvalue + QSTvalue)*100)/100;
+	document.getElementById("apple").innerHTML = apples;
+	document.getElementById("totalApple").innerHTML = totalApple;
+	document.getElementById("item").innerHTML = items;
+	document.getElementById("subtotal").innerHTML = subtotalValue;
+	document.getElementById("GST").innerHTML = GSTvalue;
+	document.getElementById("QST").innerHTML = QSTvalue;
+	document.getElementById("total").innerHTML = totalValue;
 }
 function minusApple()
 {
-	var quantity = document.getElementByID("Apple").value;
-	if ((quantity-1) < 0)
-	{
-		document.getElementByID("Apple").value = 0;
+	if (apples == 0)
+		alert ("There are 0 apples in the cart");
+	else{
+		apples--;
+		items--;
+		totalApple = Math.round((apples * applePrice)*100)/100;
+		subtotalValue = Math.round((subtotalValue - applePrice) * 100)/100;
+		GSTvalue = Math.round(subtotalValue * 5)/100;
+		QSTvalue = Math.round(subtotalValue * 9.975)/100;
+		totalValue = Math.round((subtotalValue + GSTvalue + QSTvalue)*100)/100;
+		document.getElementById("apple").innerHTML = apples;
+		document.getElementById("totalApple").innerHTML = totalApple;
+		document.getElementById("item").innerHTML = items;
+		document.getElementById("subtotal").innerHTML = subtotalValue;
+		document.getElementById("GST").innerHTML = GSTvalue;
+		document.getElementById("QST").innerHTML = QSTvalue;
+		document.getElementById("total").innerHTML = totalValue;
 	}
-	else
-	{
-		document.getElementByID("Apple").value = Number(quantity) - 1;
-	}
-	document.getElementByID("totalApple").value = document.getElementByID("Apple").value * applePrice;
-	document.getElementByID("Subtotal").value = document.getElementByID("totalApple").value + document.getElementByID("totalMilk").value + document.getElementByID("totalBanana").value;
-	document.getElementByID("numOfItems").value = document.getElementByID("Apple").value + document.getElementByID("Milk").value + document.getElementByID("Banana").value;
-	document.getElementByID("GST").value = document.getElementByID("Subtotal").value * gstValue;
-	document.getElementByID("QST").value = document.getElementByID("Subtotal").value * qstValue;
-	document.getElementByID("FinalTotal").value = document.getElementByID("Subtotal").value + document.getElementByID("GST").value + document.getElementByID("QST").value;
 }
 function addMilk()
 {
-	var quantity = document.getElementByID("Milk").value;
-	document.getElementByID("Milk").value = quantity + 1;
-	document.getElementByID("totalMilk").value = document.getElementByID("Milk").value * milkPrice;
-	document.getElementByID("Subtotal").value = document.getElementByID("totalApple").value + document.getElementByID("totalMilk").value + document.getElementByID("totalBanana").value;
-	document.getElementByID("numOfItems").value = document.getElementByID("Apple").value + document.getElementByID("Milk").value + document.getElementByID("Banana").value;
-	document.getElementByID("GST").value = document.getElementByID("Subtotal").value * gstValue;
-	document.getElementByID("QST").value = document.getElementByID("Subtotal").value * qstValue;
-	document.getElementByID("FinalTotal").value = document.getElementByID("Subtotal").value + document.getElementByID("GST").value + document.getElementByID("QST").value;
-	
+	milks++;
+	items++;
+	totalMilk = Math.round((milks * milkPrice)*100)/100;
+	subtotalValue = Math.round((subtotalValue + milkPrice) * 100)/100;
+	GSTvalue = Math.round(subtotalValue * 5)/100;
+	QSTvalue = Math.round(subtotalValue * 9.975)/100;
+	totalValue = Math.round((subtotalValue + GSTvalue + QSTvalue)*100)/100;
+	document.getElementById("milk").innerHTML = milks;
+	document.getElementById("item").innerHTML = items;
+	document.getElementById("totalMilk").innerHTML = totalMilk;
+	document.getElementById("subtotal").innerHTML = subtotalValue;
+	document.getElementById("GST").innerHTML = GSTvalue;
+	document.getElementById("QST").innerHTML = QSTvalue;
+	document.getElementById("total").innerHTML = totalValue;	
 }
 function minusMilk()
 {
-	var quantity = document.getElementByID("Milk").value;
-	if ((quantity-1) < 0)
-	{
-		document.getElementByID("Milk").value = 0;
+	if (milks == 0)
+		alert ("There are 0 milk boxes in the cart");
+	else{
+		milks--;
+		items--;
+		totalMilk = Math.round((milks * milkPrice)*100)/100;
+		subtotalValue = Math.round((subtotalValue - milkPrice) * 100)/100;
+		GSTvalue = Math.round(subtotalValue * 5)/100;
+		QSTvalue = Math.round(subtotalValue * 9.975)/100;
+		totalValue = Math.round((subtotalValue + GSTvalue + QSTvalue)*100)/100;
+		document.getElementById("milk").innerHTML = milks;
+		document.getElementById("item").innerHTML = items;
+		document.getElementById("totalMilk").innerHTML = totalMilk;
+		document.getElementById("subtotal").innerHTML = subtotalValue;
+		document.getElementById("GST").innerHTML = GSTvalue;
+		document.getElementById("QST").innerHTML = QSTvalue;
+		document.getElementById("total").innerHTML = totalValue;
 	}
-	else
-	{
-		document.getElementByID("Milk").value = quantity - 1;
-	}
-	document.getElementByID("totalMilk").value = document.getElementByID("Milk").value * milkPrice;
-	document.getElementByID("Subtotal").value = document.getElementByID("totalApple").value + document.getElementByID("totalMilk").value + document.getElementByID("totalBanana").value;
-	document.getElementByID("numOfItems").value = document.getElementByID("Apple").value + document.getElementByID("Milk").value + document.getElementByID("Banana").value;
-	document.getElementByID("GST").value = document.getElementByID("Subtotal").value * gstValue;
-	document.getElementByID("QST").value = document.getElementByID("Subtotal").value * qstValue;
-	document.getElementByID("FinalTotal").value = document.getElementByID("Subtotal").value + document.getElementByID("GST").value + document.getElementByID("QST").value;
 }
 function addBanana()
 {
-	var quantity = document.getElementByID("Banana").value;
-	document.getElementByID("Banana").value = quantity + 1;
-	document.getElementByID("totalBanana").value = document.getElementByID("Banana").value * bananaPrice;
-	document.getElementByID("Subtotal").value = document.getElementByID("totalApple").value + document.getElementByID("totalMilk").value + document.getElementByID("totalBanana").value;
-	document.getElementByID("numOfItems").value = document.getElementByID("Apple").value + document.getElementByID("Milk").value + document.getElementByID("Banana").value;
-	document.getElementByID("GST").value = document.getElementByID("Subtotal").value * gstValue;
-	document.getElementByID("QST").value = document.getElementByID("Subtotal").value * qstValue;
-	document.getElementByID("FinalTotal").value = document.getElementByID("Subtotal").value + document.getElementByID("GST").value + document.getElementByID("QST").value;
+	bananas++;
+	items++;
+	totalBanana = Math.round((bananas * bananaPrice)*100)/100;
+	subtotalValue = Math.round((subtotalValue + bananaPrice) * 100)/100;
+	GSTvalue = Math.round(subtotalValue * 5)/100;
+	QSTvalue = Math.round(subtotalValue * 9.975)/100;
+	totalValue = Math.round((subtotalValue + GSTvalue + QSTvalue)*100)/100;
+	document.getElementById("banana").innerHTML = bananas;
+	document.getElementById("item").innerHTML = items;
+	document.getElementById("totalBanana").innerHTML = totalBanana;
+	document.getElementById("subtotal").innerHTML = subtotalValue;
+	document.getElementById("GST").innerHTML = GSTvalue;
+	document.getElementById("QST").innerHTML = QSTvalue;
+	document.getElementById("total").innerHTML = totalValue;
 }
 function minusBanana()
 {
-	var quantity = document.getElementByID("Banana").value;
-	if ((quantity-1) < 0)
-	{
-		document.getElementByID("Banana").value = 0;
+	if (bananas == 0)
+		alert ("There are 0 bananas in the cart");
+	else{
+		bananas--;
+		items--;
+		totalBanana = Math.round((bananas * bananaPrice)*100)/100;
+		subtotalValue = Math.round((subtotalValue - bananaPrice) * 100)/100;
+		GSTvalue = Math.round(subtotalValue * 5)/100;
+		QSTvalue = Math.round(subtotalValue * 9.975)/100;
+		totalValue = Math.round((subtotalValue + GSTvalue + QSTvalue)*100)/100;
+		document.getElementById("banana").innerHTML = bananas;
+		document.getElementById("item").innerHTML = items;
+		document.getElementById("totalBanana").innerHTML = totalBanana;
+		document.getElementById("subtotal").innerHTML = subtotalValue;
+		document.getElementById("GST").innerHTML = GSTvalue;
+		document.getElementById("QST").innerHTML = QSTvalue;
+		document.getElementById("total").innerHTML = totalValue;
 	}
-	else
-	{
-		document.getElementByID("Banana").value = quantity - 1;
-	}
-	document.getElementByID("totalBanana").value = document.getElementByID("Banana").value * bananaPrice;
-	document.getElementByID("Subtotal").value = document.getElementByID("totalApple").value + document.getElementByID("totalMilk").value + document.getElementByID("totalBanana").value;
-	document.getElementByID("numOfItems").value = document.getElementByID("Apple").value + document.getElementByID("Milk").value + document.getElementByID("Banana").value;
-	document.getElementByID("GST").value = document.getElementByID("Subtotal").value * gstValue;
-	document.getElementByID("QST").value = document.getElementByID("Subtotal").value * qstValue;
-	document.getElementByID("FinalTotal").value = document.getElementByID("Subtotal").value + document.getElementByID("GST").value + document.getElementByID("QST").value;
 }
